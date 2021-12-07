@@ -1,0 +1,686 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Appdent - App Landing Page Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+    .added1 {	background-color: #336600;
+	color: #FFFFFF;
+}
+    </style>
+ 
+	<!-- Syntax Highlighter -->
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
+	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Appdent&rdquo; Documentation by &ldquo;WowThemez&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Appdent&rdquo;</h1>
+		
+        <div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+			  <p class="prepend-top">
+<strong>
+					Created:20/10/2017<br>
+				By: <a href="http://www.cracktheme.com">WowThemez</a><br>
+				<br>
+			    </strong><strong><br>
+		        </strong></p>
+    </div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our landing page. If you have any questions that are beyond the scope of this help file, please contact our support. Thanks so much!</p>
+	</div>
+	  </div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#temp-components">Template Components</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<li><a href="#php">PHP Code Explanation</a> <em class="quiet small">(If your theme uses PHP)</em></li>
+			<li><a href="#">Flash</a>  <em class="quiet small">(If your theme uses Flash)</em></li>
+			<li><a href="#">API Usage</a> <em class="quiet small">(If your theme uses an API)</em></li>
+			<li><a href="#">Any additional unique features that need an overview</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Below is the general HTML structure of the landing page.<br>
+		</p>
+<h4><strong>0) Color</strong> - <a href="#toc">top</a></h4>
+      <p>Color can easily changed by open the <strong>color-default.css</strong> inside '<strong>css/color-css/</strong>' folder.
+	    <br/>
+
+	      <br/>
+	    You can change content, background, heading and link color in the color-default.css      </p>
+              
+
+	  <h4 id="front-html-structures"><strong>1) index.html File Structure</strong> - <a href="#toc">top</a></h4>
+	  
+      <p>The landing page's layout consist of top that show the logo and main menu, hero section  that show background image, beforecontent that show some amaizing content,  about section contain about your some info & feature, service section contained all services, work section you can showcase your portfolio with awesome animation, skills section here you can add some skills, team section is for your team members, testimonial section here you can published your customer reviews, call to action this for call to action content, contact section here you can put your contact information & footer that show copyright information.</p>
+        
+       <pre class="brush: html;" id="front-html-structure-pre">
+&lt;!doctype html>
+&lt;!--[if lt IE 7]>      &lt;html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> &lt;![endif]-->
+&lt;!--[if IE 7]>         &lt;html class="no-js lt-ie9 lt-ie8" lang=""> &lt;![endif]-->
+&lt;!--[if IE 8]>         &lt;html class="no-js lt-ie9" lang=""> &lt;![endif]-->
+&lt;!--[if gt IE 8]>&lt;!--> &lt;html class="no-js" lang="en"> &lt;!--&lt;![endif]-->
+    &lt;head>
+        &lt;meta charset="utf-8">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1">
+		&lt;meta name="description" content="Appdent is a app landing page. Where include 6+ landing page template.">
+        &lt;meta name="author" content="WowThemez">
+       
+        &lt;title>Appdent App Landing Page&lt;/title>
+        
+		&lt;link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		
+		&lt;!-- Font Awesome CSS -->
+        &lt;link rel="stylesheet" href="css/font-awesome.min.css">
+        &lt;!-- Elegant Font Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-font-icons.css">
+        &lt;!-- Elegant Line Icons CSS -->
+        &lt;link rel="stylesheet" href="css/elegant-line-icons.css">
+		&lt;!-- Bootstrap CSS -->
+        &lt;link rel="stylesheet" href="css/bootstrap.min.css">
+        &lt;!-- animate CSS -->
+        &lt;link rel="stylesheet" href="css/animate.min.css">
+		&lt;!-- Venobox CSS -->
+        &lt;link rel="stylesheet" href="css/venobox/venobox.css">
+		&lt;!-- OWL-Carousel CSS -->
+        &lt;link rel="stylesheet" href="css/owl.carousel.css">
+		&lt;!-- Main CSS -->
+        &lt;link rel="stylesheet" href="css/main.css">
+		&lt;!-- Responsive CSS -->
+        &lt;link rel="stylesheet" href="css/responsive.css">
+
+        &lt;script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">&lt;/script>
+    &lt;/head>
+    &lt;body data-spy="scroll" data-target="#navbar" data-offset="60">
+        &lt;!--[if lt IE 8]>
+            &lt;p class="browserupgrade">You are using an &lt;strong>outdated&lt;/strong> browser. Please &lt;a href="http://browsehappy.com/">upgrade your browser&lt;/a> to improve your experience.&lt;/p>
+        &lt;![endif]-->
+        
+        &lt;div id='preloader' >
+            &lt;div class='loader' >
+                &lt;img src="img/preloader.svg" width="60" alt="">
+            &lt;/div>
+        &lt;/div>&lt;!-- Preloader -->
+        
+        &lt;header id="header" class="header_section">
+			&lt;nav class="navbar">
+				&lt;div class="container">
+					&lt;div class="navbar-header">
+						&lt;button type="button" class="nav-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							&lt;span class="sr-only">Toggle navigation&lt;/span>
+							&lt;span class="icon-bar">&lt;/span>
+							&lt;span class="icon-bar">&lt;/span>
+							&lt;span class="icon-bar">&lt;/span>
+						&lt;/button>
+						&lt;a href="#" class="brand logo-dark">&lt;img src="img/logo.png" alt="Aperture">&lt;/a>
+					&lt;/div>
+					&lt;div id="navbar" class="collapse navbar-collapse navbar-right">
+						&lt;ul class="nav navbar-nav nav-menu">
+                            &lt;li class="active">&lt;a data-scroll href="#home">Home &lt;span class="sr-only">(current)&lt;/span>&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#features">Features&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#screenshots">Screenshots&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#pricing">Pricing&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#download">Download&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#testimonial">Reviews&lt;/a>&lt;/li>
+							&lt;li>&lt;a data-scroll href="#blog">News&lt;/a>&lt;/li>
+                        &lt;/ul>
+					&lt;/div>&lt;!--/.navbar-collapse -->
+				&lt;/div>
+			&lt;/nav>&lt;!-- Navigation Bar -->
+		&lt;/header> &lt;!-- Header -->
+        
+        &lt;section id="home" class="hero_section overlay">
+            
+		&lt;/section>&lt;!-- /.hero_section -->
+
+		&lt;section class="promo_section padding">
+			
+		&lt;/section>&lt;!-- /.promo_section -->
+		
+		&lt;section class="doc_section padding">
+
+		&lt;/section>&lt;!-- /.doc_section -->
+		
+		&lt;section id="features" class="feature_section padding">
+            
+        &lt;/section>&lt;!-- feature-section -->
+
+		&lt;section id="screenshots" class="screenshot_section padding">
+           
+        &lt;/section>&lt;!-- Screenshot Section -->
+        
+        &lt;div class="video_section align-center">
+			
+		&lt;/div>&lt;!-- /.video_section -->
+        
+        &lt;section id="pricing" class="pricing_section padding bg-grey">
+            
+        &lt;/section>&lt;!-- /.pricing_section -->
+        
+        &lt;section id="download" class="download_section padding">
+            
+        &lt;/section>&lt;!-- /.download_section -->
+        
+        &lt;section id="testimonial" class="testimonial_section">
+			
+		&lt;/section>&lt;!-- /.testimonial_section -->
+        
+        &lt;section id="blog" class="blog_area padding">
+		    
+		&lt;/section>&lt;!--   Blog Section     -->
+
+        &lt;div id="subscribe" class="subscribe_section">
+       		
+        &lt;/div>&lt;!-- /.footer_top_section -->
+       
+		&lt;footer class="footer_section">
+			
+		&lt;/footer>&lt;!-- /.footer_section -->
+
+		&lt;a data-scroll href="#header" id="scroll-to-top">&lt;i class="arrow_carrot-up">&lt;/i>&lt;/a>
+	
+		&lt;!-- jQuery Lib -->
+		&lt;script src="js/vendor/jquery-1.12.4.min.js">&lt;/script>
+		&lt;!-- waypoints js -->
+		&lt;script src="js/vendor/waypoints.min.js">&lt;/script>
+		&lt;!-- Bootstrap JS -->
+		&lt;script src="js/vendor/bootstrap.min.js">&lt;/script>
+		&lt;!-- OWL-Carousel JS -->
+		&lt;script src="js/vendor/owl.carousel.min.js">&lt;/script>
+		&lt;!-- Smooth Scroll JS -->
+		&lt;script src="js/vendor/smooth-scroll.min.js">&lt;/script>
+		&lt;!-- venobox JS -->
+		&lt;script src="js/vendor/venobox.min.js">&lt;/script>
+		&lt;!-- Counterup JS -->
+		&lt;script src="js/vendor/jquery.counterup.min.js">&lt;/script>
+		&lt;!-- Ajaxchimp JS -->
+		&lt;script src="js/vendor/jquery.ajaxchimp.min.js">&lt;/script>
+        &lt;!-- wow JS -->
+        &lt;script src="js/vendor/wow.min.js">&lt;/script>
+		&lt;!-- Main JS -->
+		&lt;script src="js/main.js">&lt;/script>
+
+    &lt;/body>
+&lt;/html>
+
+        </pre>
+       <hr>
+		
+
+		<h3 id="temp-components"><strong>B) Template Components</strong> - <a href="#toc">top</a></h3>
+		<p>The site is made of many sections like header, slider, testimonials, services and more...</p>
+
+<h4 id="slider"><strong>1) Header Section</strong> - <a href="#toc">top</a></h4>
+
+
+<pre class="brush: html;">
+&lt;header id="header" class="header_section">
+	&lt;nav class="navbar">
+		&lt;div class="container">
+			&lt;div class="navbar-header">
+				&lt;button type="button" class="nav-btn navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					&lt;span class="sr-only">Toggle navigation&lt;/span>
+					&lt;span class="icon-bar">&lt;/span>
+					&lt;span class="icon-bar">&lt;/span>
+					&lt;span class="icon-bar">&lt;/span>
+				&lt;/button>
+				&lt;a href="#" class="brand logo-dark">&lt;img src="img/logo.png" alt="Aperture">&lt;/a>
+			&lt;/div>
+			&lt;div id="navbar" class="collapse navbar-collapse navbar-right">
+				&lt;ul class="nav navbar-nav nav-menu">
+					&lt;li class="active">&lt;a data-scroll href="#home">Home &lt;span class="sr-only">(current)&lt;/span>&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#features">Features&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#screenshots">Screenshots&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#pricing">Pricing&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#download">Download&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#testimonial">Reviews&lt;/a>&lt;/li>
+					&lt;li>&lt;a data-scroll href="#blog">News&lt;/a>&lt;/li>
+				&lt;/ul>
+			&lt;/div>&lt;!--/.navbar-collapse -->
+		&lt;/div>
+	&lt;/nav>&lt;!-- Navigation Bar -->
+&lt;/header> &lt;!-- Header -->
+
+</pre>
+        
+        
+	  <hr>
+<h4 id="portfolio"><strong>2) Hero Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="home" class="hero_section overlay">
+	&lt;div class="hero_moc hidden-sm hidden-xs">&lt;/div>&lt;!-- /.hero_moc -->
+	&lt;div class="container">
+		&lt;div class="display-table">
+			&lt;div class="table-cell">
+				&lt;div class="col-md-6">
+					&lt;div class="hero_content">
+						&lt;h1>A great app &lt;br>makes your life better&lt;/h1>
+						&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived mobile app not only five business more centuries.&lt;/p>
+						&lt;a href="#" class="hero_btn">&lt;i class="fa fa-download">&lt;/i> Download Now&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.hero_section -->
+</pre>
+
+<hr>
+
+<h4 id="portfolio"><strong>3) Promo Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="promo_section padding">
+	&lt;div class="container">
+		&lt;div class="promo_items">
+			&lt;div class="col-sm-4 col-xs-6 xs-padding">
+				&lt;div class="promo_item">
+					&lt;i class="icon-mobile">&lt;/i>
+					&lt;h3>Fully Responsive&lt;/h3>
+					&lt;p>Lorem ipsum dolor sit amet consectetur ipsum dolor sit amet consectetur adipisicing elit Quisquam eveniet.&lt;/p>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.promo_section -->
+</pre>
+
+<br>
+
+<hr>
+
+<h4 id="portfolio"><strong>3) Documentation Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section class="doc_section padding">
+	&lt;div class="container">
+		&lt;div class="col-md-5 col-sm-6 col-md-offset-1 xs-hidden">
+			&lt;div class="doc_mockup">
+				&lt;img src="img/phone-1.png" class="doc_mockup_1" alt="about-moc">
+				&lt;img src="img/phone-2.png" class="doc_mockup_2 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="800ms" alt="about-moc">
+			&lt;/div>
+		&lt;/div>
+		&lt;div class="col-md-5 col-sm-6 xs-padding">
+			&lt;div class="doc_content">
+				&lt;h2>Awesome Documentation&lt;/h2>
+				&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived mobile app not only five business more centuries.&lt;/p>
+				&lt;ul class="list_check mt-30 mb-30">
+					&lt;li>Packed With Amazing Features.&lt;/li>
+					&lt;li>Relaible And Secure Flatform.&lt;/li>
+					&lt;li>Everything Is perfectly organized.&lt;/li>
+					&lt;li>Attach Large Life Easily.&lt;/li>
+				&lt;/ul>
+				&lt;a href="#" class="app_btn">Documentation&lt;/a>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.doc_section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>4) Feature Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="features" class="feature_section padding">
+	&lt;div class="container">
+	   &lt;div class="section-heading align-center mb-40">
+		   &lt;h2>Awesome Features&lt;/h2>
+		   &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p>
+	   &lt;/div>
+	   &lt;div class="feature_wrap">
+			&lt;div class="col-md-4 col-xs-6">
+				&lt;ul class="feature_list text-right xs-no-padding">
+					&lt;li class="list_item mb-40 wow fadeInRight" data-wow-delay="0ms" data-wow-duration="800ms">
+						&lt;i class="icon-mobile">&lt;/i>
+						&lt;h4 class="mb-10">Responsive Design&lt;/h4>
+						&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p>
+					&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+			&lt;div class="col-md-4 hidden-sm hidden-xs wow fadeInUp" data-wow-delay="0ms" data-wow-duration="800ms">
+				&lt;img src="img/feature-moc.png" alt="Service" class="feature_moc">
+			&lt;/div>
+			&lt;div class="col-md-4 col-xs-6">
+				&lt;ul class="feature_list xs-no-padding">
+					&lt;li class="list_item mb-40 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="800ms">
+						&lt;i class="icon-hotairballoon">&lt;/i>
+						&lt;h4 class="mb-10">Simple frendly interface&lt;/h4>
+						&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p>
+					&lt;/li>
+				&lt;/ul>
+			&lt;/div>
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- feature-section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>5) Screenshots Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="screenshots" class="screenshot_section padding">
+   &lt;div class="container">
+	   &lt;div class="section_heading mb-40 align-center">
+		   &lt;h2>App Screenshots&lt;/h2>
+		   &lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p>
+	   &lt;/div>
+	   &lt;ul id="app_carousel" class="app_carousel owl-carousel">
+		   &lt;li class="shot_item">
+			   &lt;figure class="screen_thumb">
+				   &lt;img src="img/screen-1.jpg" alt="App Screenshots">
+				   &lt;figcaption>
+					  &lt;div class="display-table">
+						  &lt;div class="table-cell">
+							  &lt;a href="img/screen-1.jpg" class="img_popup">&lt;i class="fa fa-plus">&lt;/i>&lt;/a>
+						  &lt;/div>
+					  &lt;/div>
+				   &lt;/figcaption>
+			   &lt;/figure>
+		   &lt;/li>
+	   &lt;/ul>
+   &lt;/div>
+&lt;/section>&lt;!-- Screenshot Section -->
+</pre>
+
+<hr />
+<h4 id="portfolio"><strong>5) Video Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;div class="video_section align-center">
+	&lt;div class="container">
+		&lt;div class="video_content">
+			&lt;a href="#" class="img_popup">&lt;i class="fa fa-play">&lt;/i>&lt;/a>
+			&lt;span>Play Video&lt;/span>
+		&lt;/div>
+	&lt;/div>
+&lt;/div>&lt;!-- /.video_section -->
+</pre>
+
+<h4 id="portfolio"><strong>5) Pricing Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="pricing" class="pricing_section padding bg-grey">
+	&lt;div class="container">
+		&lt;div class="heading align-center mb-40">
+			&lt;h2>Plans & Pricing&lt;/h2>
+			&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. &lt;/p>
+		&lt;/div>&lt;!-- /.heading -->
+		&lt;div class="pricing_items">
+			&lt;div class="col-md-3 col-xs-6 sm-padding">
+				&lt;div class="pricing_table wow flipInY" data-wow-delay="0ms" data-wow-duration="1000ms">
+					&lt;div class="pricing_head">
+						&lt;h5>BASIC&lt;/h5>
+						&lt;h3>$49 &lt;span>/ Month&lt;/span>&lt;/h3>
+						&lt;p class="no-margin">Appdent Pricing Table Design.&lt;/p>
+					&lt;/div>&lt;!-- /.pricing_head -->
+					&lt;ul class="pricing_list">
+						&lt;li>1 User&lt;/li>
+						&lt;li>1 Dashboard&lt;/li>
+						&lt;li>5 Projects&lt;/li>
+						&lt;li class="red">Custom Domain&lt;/li>
+					&lt;/ul>
+					&lt;div class="pricing_footer">
+						&lt;a href="#" class="app_btn">purchase&lt;/a>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>&lt;!-- pricing 1 -->
+		&lt;/div>
+	&lt;/div>
+&lt;/section>&lt;!-- /.pricing_section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>6) Download Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="download" class="download_section padding">
+	&lt;div class="container">
+		&lt;div class="counter_content">
+			&lt;h3 class="counter">12649&lt;/h3>
+			&lt;h4>Total App Downloaded&lt;/h4>
+			&lt;h5>Get Your App Now. Available On Google Play Store & The App Store!&lt;/h5>
+		&lt;/div>
+	   &lt;ul class="download_content">
+		   &lt;li>&lt;a href="#">&lt;i class="fa fa-windows">&lt;/i>&lt;/a>&lt;/li>
+		   &lt;li>&lt;a href="#">&lt;i class="fa fa-android">&lt;/i>&lt;/a>&lt;/li>
+		   &lt;li>&lt;a href="#">&lt;i class="fa fa-apple">&lt;/i>&lt;/a>&lt;/li>
+	   &lt;/ul>
+	&lt;/div>
+&lt;/section>&lt;!-- /.download_section -->
+</pre>
+
+<hr />
+
+<h4 id="portfolio"><strong>6) Testimonial Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="testimonial" class="testimonial_section">
+	&lt;div class="container">
+		&lt;ul id="testimonial_carousel" class="testimonial_items owl-carousel">
+			&lt;li class="testimonial_item">
+				&lt;p>"There are design companies, and then there are user experience design interface design&lt;br> professional. By far one of the worlds best known brands."&lt;/p>
+				&lt;h4>Anita Tran, IT Solutions.&lt;/h4>
+			&lt;/li>
+		&lt;/ul>
+	&lt;/div>
+&lt;/section>&lt;!-- /.testimonial_section -->
+</pre>
+
+<br>
+
+<hr />
+
+<h4 id="portfolio"><strong>7) Blog Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;section id="blog" class="blog_area padding">
+	&lt;div class="container">
+		&lt;div class="row">
+			&lt;div class="section_heading align-center mb-40">
+				&lt;h2>Recent News&lt;/h2>
+				&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. &lt;/p>
+			&lt;/div>
+		&lt;/div>&lt;!-- Section Heading -->
+		&lt;div class="row">
+			&lt;div class="blog_items">
+				&lt;div class="col-md-4 col-xs-6 sm-padding">
+					&lt;div class="blog_item wow swing" data-wow-delay="0ms" data-wow-duration="1000ms">
+						&lt;figure class="post_thumb">
+							&lt;img src="img/blog-1.jpg" alt="Blog Post">
+							&lt;div class="span">10 Jan&lt;br>2018&lt;/div>
+							&lt;a href="#" class="blog_title">
+								&lt;h3>Appdent app landing page template.&lt;/h3>
+							&lt;/a>
+						&lt;/figure>
+						&lt;div class="post_content">
+							&lt;p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/p>
+							&lt;a href="#" class="read_more_btn">Read More&lt;/a>
+						&lt;/div>
+					&lt;/div>
+				&lt;/div>
+			&lt;/div>
+		&lt;/div>&lt;!-- Blog Post Items -->
+	&lt;/div>
+&lt;/section>&lt;!--   Blog Section     -->
+</pre>
+
+<hr />
+
+<h4 id="portfolio"><strong>7) Subscribe Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;div id="subscribe" class="subscribe_section">
+	&lt;div class="subscribe_wrapper">
+		&lt;div class="container">
+		   &lt;div class="subscribe_wrap">
+				&lt;form action="#" class="subscribe_form">
+					&lt;input type="email" name="email" id="subs-email" class="form_input" placeholder="Enter Your Email Address...">
+					&lt;button type="submit" class="submit">Subscribe&lt;/button>
+					&lt;div class="clearfix">&lt;/div>
+					&lt;div id="subscribe-result">
+						&lt;p class="subscription-success">&lt;/p>
+						&lt;p class="subscription-error">&lt;/p>
+					&lt;/div>
+				&lt;/form>
+			&lt;/div>&lt;!-- /.subscribe_wrap -->
+			&lt;ul class="social_link">
+				 &lt;li>&lt;a href="#">&lt;i class="fa fa-facebook">&lt;/i>&lt;/a>&lt;/li>
+				 &lt;li>&lt;a href="#">&lt;i class="fa fa-twitter">&lt;/i>&lt;/a>&lt;/li>
+				 &lt;li>&lt;a href="#">&lt;i class="fa fa-google-plus">&lt;/i>&lt;/a>&lt;/li>
+				 &lt;li>&lt;a href="#">&lt;i class="fa fa-instagram">&lt;/i>&lt;/a>&lt;/li>
+				 &lt;li>&lt;a href="#">&lt;i class="fa fa-skype">&lt;/i>&lt;/a>&lt;/li>
+				 &lt;li>&lt;a href="#">&lt;i class="fa fa-pinterest">&lt;/i>&lt;/a>&lt;/li>
+			&lt;/ul>&lt;!-- /.social_link -->
+		&lt;/div>
+	&lt;/div>&lt;!-- /.subscribe_wrapper -->
+&lt;/div>&lt;!-- /.footer_top_section -->
+</pre>
+<hr />
+
+<h4 id="portfolio"><strong>8) Footer Section</strong> - <a href="#toc">top</a></h4>
+  <br>
+<pre class="brush: html;">
+&lt;footer class="footer_section">
+	&lt;div class="container">
+		&lt;div class="col-sm-6 xs-padding">
+			&lt;p class="copyright">&copy; 2017 Appdent Powered by WowThemez.&lt;/p>
+		&lt;/div>
+		&lt;nav class="col-sm-6 xs-padding">
+			&lt;ul class="footer_menu">
+				&lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="#">Features&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="#">Download&lt;/a>&lt;/li>
+				&lt;li>&lt;a href="#">Contact&lt;/a>&lt;/li>
+			&lt;/ul>
+		&lt;/nav>
+	&lt;/div>
+&lt;/footer>&lt;!-- /.footer_section -->
+</pre>
+
+
+<br>
+
+<p>&nbsp;</p>
+
+	  <hr>
+		<h3 id="cssFiles"><strong>C) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+		 <p>These are the css files:</p>
+		<ol>
+			<li>bootstrap.min.css</li> 
+			<li>animate.min.css</li> 
+			<li>elegant-font-icons.css</li> 
+			<li>elegant-line-icons.css</li> 
+			<li>owl.carousel.css</li> 
+			<li>main.css </li>
+	        <li>responsive.css</li>
+	  </ol>
+
+	  
+<p>&nbsp;</p>
+	  <hr>
+		
+		<h3 id="javascript"><strong>D) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme use these Javascript files:</p>
+		
+		<ol>
+		  <li>jQuery<br>
+		    jQuery is a Javascript library that greatly reduces the amount of code that you must write. jQuery use these javascript files:
+		    <pre>
+            	bootstrap.min.js
+                smooth-scroll.min.js
+                owl.carousel.min.js
+                jquery.ajaxchimp.min.js
+                jquery-1.12.4.min.js
+                jquery.mb.YTPlayer.min.js
+                owl.carousel.min.js
+                venobox.min.js
+                wow.min.js
+                jquery.counterup.min.js
+                main.js
+            </pre>
+		    You can edit the contact.js files. for setting contact form
+		    <br>
+            <br>
+		  </li>
+	  </ol>
+		
+<hr>
+		
+		<h3 id="psdFiles"><strong>E) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>There are  PSDs inside the &quot;psd/&quot; folder.</p>
+		<hr>
+		
+		<h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		<ol>
+			<li><a href="http://getbootstrap.com" target="_blank">Bootstrap 3.3</a></li>
+			<li><a href="http://www.owlcarousel.owlgraphic.com" target="_blank">OWL Carousel</a></li>
+			<li><a href="https://wowjs.uk/" target="_blank">WOW JS</a></li>
+			<li><a href="http://veno.es/venobox/" target="_blank">VenoBox</a></li>
+			<li><a href="https://github.com/cferdinandi/smooth-scroll" target="_blank">Smooth Scroll</a></li>
+			<li><a href="https://github.com/pupunzi/jquery.mb.YTPlayer/wiki" target="_blank">YTPlayer</a></li>
+			<li><a href="http://plugins.jquery.com/ajaxchimp/" target="_blank">AjaxChimp</a></li>
+		</ol>
+	    <p>
+      
+    <hr>
+        <h3 id="php"><strong>G) PHP Code Explanation </strong> - <a href="#toc">top</a></h3>
+        <p>There are only one php code for contact page which is contact.php, open this file and change the email and subject on line 24 and line 27.
+         No need to edit other code unless you really want to.
+  <hr>
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist.</p> 
+		
+	  <p class="append-bottom alt large"><strong>WowThemez</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div>
+<!-- end div .container -->
+	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script> 
+	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script> 
+	<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
+</body>
+</html>

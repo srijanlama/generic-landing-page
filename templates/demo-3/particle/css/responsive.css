@@ -1,0 +1,194 @@
+/*
+    Theme Responsive Design
+*/
+
+@media (max-width: 1024px) {
+    h1{
+        font-size: 45px;
+    }
+	.hero_section{
+        height: 650px;
+    }
+    .hero_content {
+        padding: 100px 0;
+    }
+}
+
+/* ---- Start of max-width 992px CSS ---- */
+@media (max-width: 992px) {
+    .sm-padding{ padding: 15px; }
+    ul.nav > li > a {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .hero_section{
+        height: 450px;
+    }
+    .doc_content{
+        padding: 0;
+    }
+    .service_items.inverted,
+    .service_items{
+        margin: 0;
+    }
+    .service_items.inverted .service_item{
+        margin-left: 0;
+    }
+    .service_items.inverted .service_item,
+    .service_items .service_item,
+    .service_items {
+        padding: 0;
+    }
+    .service_items .service_item h3{
+        margin: 5px 0;
+    }
+    .service_items .service_item p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+/* ---- End of max-width 992px CSS ---- */
+
+
+/* ---- Start of min-width 480px and max-width 768px CSS ---- */
+@media all and (min-width: 480px) and (max-width: 768px) {
+	
+}
+/* ---- End of min-width 480px and max-width 768px CSS ---- */
+
+
+/* ---- Start of max-width 767px CSS ---- */
+@media all and (max-width: 767px) {
+    body{ overflow-x: visible; }
+    body, p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .padding{
+        padding: 60px 0;
+    }
+    .xs-padding{
+    	padding: 15px;
+    }
+    .navbar-header {
+        padding: 5px 0;
+    }
+    .navbar-header .brand {
+        display: block;
+        padding: 13px 25px;
+    }
+    .navbar-collapse {
+        background-color: #fff;
+        border-top: medium none;
+        box-shadow: none;
+        margin-top: -7px;
+        overflow-x: visible;
+        padding: 0!important;
+    }
+    ul.nav{
+        margin: 0;
+        overflow: hidden;
+        padding: 20px 0;;
+    }
+    ul.nav > li{
+        display: block;
+        margin: 0;
+    }
+    .navbar-fixed ul.nav > li > a,
+    ul.nav > li > a{
+        display: block;
+        font-size: 14px;
+        color: #333;
+        line-height: 45px;
+        padding: 0 30px;
+    }
+    .navbar-fixed ul.nav > li > a:hover, 
+    .navbar-fixed ul.nav > li > a:focus, 
+    .navbar-fixed ul.nav > li.active > a,
+    ul.nav > li > a:hover,
+    ul.nav > li.active > a {
+        background-color: transparent;
+        color: #f77030;
+    }
+    .hero_section{
+        height: 400px;
+    }
+    .hero_content{
+        padding: 0;
+    }
+    .service_items .service_item{
+        text-align: left;
+    }
+    .video_content h2 {
+        padding: 19px 0;
+    }
+    .owl-nav div.owl-prev{
+        left: 0;
+    }
+    .owl-nav div.owl-next{
+        right: 0;
+    }
+    .pricing_wrap li.col-xs-6{
+        padding: 15px;
+    }
+    .copyright,
+    .footer_menu{
+        text-align: center;
+    }
+}
+/* ---- End of max-width 767px CSS ---- */
+
+
+/* ---- Start of max-width 520px CSS ---- */
+@media all and (max-width: 520px) {
+    h3, h4{ font-size: 13px; }
+    .col-xs-6{
+        float: none;
+        width: 100%;
+    }
+    .feature_list,
+    .feature_list.text-right{ text-align: center; }
+    .counter_content h3{ font-size: 60px; }
+    .counter_content h4 { font-size: 24px; }
+    .testimonial_item p { font-size: 16px; }
+    .testimonial_item p br { display: none; }
+    .subscribe_form { width: 98%; }
+
+}
+/* ---- End of max-width 520px CSS ---- */
+
+
+/* ---- Start of max-width 420px CSS ---- */
+@media all and (max-width: 420px) {
+    .subscribe_form .form_input {
+        width: 100%; 
+        margin-bottom: 15px;
+    }
+    .subscribe_form .submit {
+        width: 100%;
+        margin-left: 0;
+    }
+    .download_content li{
+        margin: 15px;
+    }
+}
+/* ---- End of max-width 420px CSS ---- */
+
+
+/* ---- Start of max-width 380px CSS ---- */
+@media all and (max-width: 380px) {
+    .doc_mockup .doc_mockup_2{ left: 70px; }
+}
+/* ---- End of max-width 380px CSS ---- */

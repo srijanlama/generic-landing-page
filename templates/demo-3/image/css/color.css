@@ -1,0 +1,37 @@
+/*
+	Appdent Color CSS
+*/
+.navbar-fixed.header_section,
+#scroll-to-top,
+.subscribe_section,
+.download_section,
+.mid_table,
+.video_section:before,
+.shot_item .screen_thumb figcaption a,
+.owl-nav div,
+.feature_list .list_item i,
+.app_btn,
+.hero_section:before{
+    background: #f98f1c;
+    background: -moz-linear-gradient(-45deg, #f98f1c 0%, #f45442 100%);
+    background: -webkit-linear-gradient(-45deg, #f98f1c 0%,#f45442 100%);
+    background: linear-gradient(135deg, #f98f1c 0%,#f45442 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f98f1c', endColorstr='#f45442',GradientType=1 );
+}
+.testimonial_items .owl-dots .owl-dot.active{
+	background-color: #f98f1c;
+}
+.post_thumb .blog_title,
+.post_thumb .span {
+	background-color: rgba(247,112,48,0.8);
+}
+.footer_menu li a,
+.social_link li a,
+.subscribe_form .submit,
+.post_content .read_more_btn:hover,
+.testimonial_item h4,
+.download_content li a,
+.list_check li:before,
+.promo_items .promo_item i{
+    color: #f98f1c;
+}
